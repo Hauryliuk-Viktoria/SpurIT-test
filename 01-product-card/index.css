@@ -1,0 +1,118 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    max-width: 1920px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.products-of-the-week{
+    background-color: #F6F6F6;
+}
+.products-of-the-week-title{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    margin: 40px 0;
+}
+.product-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.product-card{
+    max-width: 380px;
+    height: 482px;
+    background-color: #fff;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+border-radius: 12px;
+margin: 0 24px 24px;
+}
+.product-card-img{
+    border-radius: 12px 12px 0 0;
+    position: relative;
+}
+.product-card-img:first-child::after{
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 100;
+    background-image: url("img/New.png");
+}
+.product-card-text{
+    margin: 24px;
+    position: relative;
+}
+.card-title{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+.card-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+button {
+    width: 332px;
+    height: 48px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 139%;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    color: #42940F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 172px;
+}  
+button:hover {
+    background-color: #42940F;
+    color: #ffffff;
+}
+button:active {
+    border: 2px solid #1F5200;
+    background-color: #1F5200;
+    color: #ffffff;
+}
+button:disabled,
+button[disabled]{
+    border: 1px solid #4E4E4E;
+    background-color: #4E4E4E;
+    color: #fff;
+}
+@media(max-width: 390px){
+    .products-of-the-week-title{
+        font-size: 36px;
+    }
+    .product-card{
+        max-width: 340px;
+    }
+    .product-card-img{
+        width: 340px;
+    }
+    button{
+        width: 292px;
+    }
+} 
+@media(max-width: 281px){
+    .product-card{
+        max-width: 270px;
+    }
+    .product-card-img{
+        width: 270px;
+    }
+    button{
+        width: 222px;
+        top: 240px;
+    }
+} 
